@@ -167,7 +167,7 @@ header {
 .gender-container label {
   color: #1d2129;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   padding: 0 10px 0 3px;
 }
@@ -178,7 +178,7 @@ header {
   padding: 7px 20px;
   text-align: center;
   background: linear-gradient(#67ae55, #578843);
-  color: #fff;
+  color: white;
   border: 1px solid;
   border-radius: 5px;
   cursor: pointer;
