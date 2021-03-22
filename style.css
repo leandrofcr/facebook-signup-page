@@ -22,6 +22,7 @@ header {
 .top-bar-content {
   display: flex;
   width: 800px;
+  align-self: flex-start;
 }
 
 .main-content {
@@ -92,6 +93,7 @@ input {
 
 .facebook-login {
   display: flex;
+  align-self: flex-end;
 }
 
 .form-group {

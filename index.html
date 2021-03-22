@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="style.css">
 
-
 </head>
 
 <body>
@@ -19,94 +18,51 @@
       <a href="#"><img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook"></a>
     </div>
 
-
-      <div>
-        <form class="facebook-login" action="" enctype="multipart/form-data">
-          <div class="form-group">
-            <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-            <input type="email" id="user-email-phone">
-          </div>
-          <div class="form-group">
-            <label id="user-password-label" for="user-password">Senha</label>
-            <input type="password" id="user-password">
-            <p><a href="#" id="reset-account"> Esqueceu a conta?</a></p>
-          </div>
-          <div class="form-control">
-            <button id="button-login">Entrar</button>
-          </div>
-      </div>
+    <div>
+      <form class="facebook-login" action="" enctype="multipart/form-data">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input type="email" id="user-email-phone">
+        </div>
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input type="password" id="user-password">
+          <p><a href="#" id="reset-account"> Esqueceu a conta?</a></p>
+        </div>
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
       </form>
+    </div>
+
+    </div>
     </div>
 
   </header>
 
+  <main class="main-content">
+    <section class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
+      <img id="facebook-networking" src="/imgs/networking.png" alt="Networking Facebook">
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<main class="main-content">
-  <section class="left-content">
-    <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-    <img id="facebook-networking"  src="/imgs/networking.png" alt="Networking Facebook">
-  </section>
-
-  <section class="right-content">
-    <div class="text-right-content">
-      <h1>Abra uma conta</h1>
-      <span class="quick-easy">É rápido e fácil.</span>
-    </div>
-    <div class="form-registration">
-      <div class="initial-registration">
-        <input type="text" name="firstname" id="firstname" placeholder="Nome">
-        <input type="text" name="lastname" id="lastname" placeholder="Sobrenome">
+    <section class="right-content">
+      <div class="text-right-content">
+        <h1>Abra uma conta</h1>
+        <span class="quick-easy">teste</span>
       </div>
-      <input type="text" name="phone_email" id="phone-email" placeholder="Celular ou email">
-      <input type="password" name="password" id="password" placeholder="Nova senha">
-    </div>
-  </section>
+      <form class="form-registration">
+        <div class="initial-registration">
+          <input type="text" name="firstname" id="firstname" placeholder="Nome">
+          <input type="text" name="lastname" id="lastname" placeholder="Sobrenome">
+        </div>
+        <input type="text" name="phone_email" id="phone-email" placeholder="Celular ou email">
+        <input type="password" name="password" id="password" placeholder="Nova senha">
+      </form>
+    </section>
 
-</main>
+  </main>
 
   <script src="script.js"></script>
 </body>
