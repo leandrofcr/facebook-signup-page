@@ -9,17 +9,12 @@
 
 header {
   display: flex;
-  justify-content: space-around;
-}
-
-.top-bar {
-  display: flex;
   background-color: #4267b2;
   justify-content: space-around;
   align-items: center;
 }
 
-.top-bar-content {
+.top-bar{
   display: flex;
   width: 980;
   align-self: flex-start;
