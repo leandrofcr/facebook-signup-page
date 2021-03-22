@@ -20,7 +20,7 @@ header {
   height: 23px;
   border: solid 1px black;
   border-radius: 2px;
-  margin: 3px 10px 3px 0px;
+  margin: 3px 10px 3px 0;
 }
 
 .top-bar {
@@ -90,25 +90,21 @@ header {
   width: 172px;
 }
 
-#phone-email,
-#password {
+#phone-email , #password {
   margin-bottom: 10px;
   width: 352px;
 }
 
-input {
-  padding: 8px 10px;
-}
-
 .facebook-login {
   display: flex;
-  align-self: flex-end;
+  align-self: flex-en;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   color: white;
+  padding: 8px 10px;
 }
 
 .form-control {
@@ -116,8 +112,7 @@ input {
   align-self: flex-end;
 }
 
-#reset-account,
-#reset-account:visited {
+#reset-account , #reset-account:visited {
   text-decoration: none;
   color: #9cb4d8;
 }
