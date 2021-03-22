@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178);
+  background-color: #4267b2;
   justify-content: space-around;
+  align-items: center;
 }
 
 .top-bar-content {
@@ -104,10 +106,39 @@
   width: 172px;
 }
 
-#phone-email {
+#phone-email, #password {
+  margin-bottom: 10px;
   width: 352px;
 }
 
 input {
   padding: 8px 10px;
+}
+
+
+
+
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
+#reset-account , #reset-account:visited {
+  text-decoration: none;
+  color: #9cb4d8;
+}
+
+#reset-account:hover {
+  text-decoration: underline;
 }
