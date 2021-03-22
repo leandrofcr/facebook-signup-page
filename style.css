@@ -92,6 +92,7 @@
 .initial-registration {
   display: flex;
   margin-right: 8px;
+  margin-bottom: 10px;
 }
 
 .initial-registration input:nth-child(1) {
@@ -101,6 +102,10 @@
 
 .initial-registration input:nth-child(2) {
   width: 172px;
+}
+
+#phone-email {
+  width: 352px;
 }
 
 input {
