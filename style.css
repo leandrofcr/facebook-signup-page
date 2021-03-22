@@ -55,7 +55,7 @@ header {
 .right-content {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 300px;
 }
 
 .text-right-content {
@@ -152,21 +152,21 @@ header {
   font-weight: 600;
 }
 
-.label-gender {
+.label-gender-content {
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 16px;
   font-weight: 600;
 }
 
-#label-gender-text {
+#label-gender {
   color: #90949c;
   margin-bottom: 5px;
 }
 
 .gender-container label {
   color: #1d2129;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   padding: 0 10px 0 3px;
