@@ -46,7 +46,7 @@ header {
 .right-content {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 380px;
 }
 
 .text-right-content {
@@ -144,4 +144,24 @@ input {
   color: #90949c;
   font-size: 16px;
   font-weight: 600;
+}
+
+.label-gender {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#label-gender-text {
+  color: #90949c;
+  margin-bottom: 5px;
+}
+
+.gender-container label {
+  color: #1d2129;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
 }
