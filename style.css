@@ -49,8 +49,8 @@
 
 .main-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: baseline;
+  justify-content: center;
 }
 
 .left-content {
@@ -64,4 +64,24 @@
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
+}
+
+.right-content {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.quick-easy {
+  font-family: inherit;
+  color: #1d2129;
+  font-size: 19px;
 }
