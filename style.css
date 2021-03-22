@@ -9,10 +9,10 @@
   justify-content: space-around;
 }
 
-
-
-
-
+.top-bar-content {
+  display: flex;
+  width: 800px;
+}
 
 
 
@@ -50,8 +50,4 @@
 .main-content {
   display: flex;
   flex-direction: column;
-}
-.top-bar-content {
-  display: flex;
-  width: 800px;
 }
