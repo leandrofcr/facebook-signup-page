@@ -67,10 +67,13 @@
 }
 
 .right-content {
-  padding: 20px 0;
   display: flex;
   flex-direction: column;
   width: 300px;
+}
+
+.text-right-content {
+  padding: 20px 0;
 }
 
 .right-content h1 {
@@ -84,4 +87,22 @@
   font-family: inherit;
   color: #1d2129;
   font-size: 19px;
+}
+
+.initial-registration {
+  display: flex;
+  margin-right: 8px;
+}
+
+.initial-registration input:nth-child(1) {
+  margin-right: 8px;
+  width: 172px;
+}
+
+.initial-registration input:nth-child(2) {
+  width: 172px;
+}
+
+input {
+  padding: 8px 10px;
 }
