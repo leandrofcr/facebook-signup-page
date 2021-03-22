@@ -24,6 +24,105 @@ header {
   width: 800px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.text-right-content {
+  padding: 20px 0;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.quick-easy {
+  font-family: inherit;
+  color: #1d2129;
+  font-size: 19px;
+}
+
+.initial-registration {
+  display: flex;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+#firstname {
+  margin-right: 8px;
+  width: 172px;
+}
+
+#lastname {
+  width: 172px;
+}
+
+#phone-email , #password {
+  margin-bottom: 10px;
+  width: 352px;
+}
+
+input {
+  padding: 8px 10px;
+}
+
 .facebook-login {
   display: flex;
 }
