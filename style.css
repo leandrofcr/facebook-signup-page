@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
-
 }
 
 header {
@@ -128,4 +127,21 @@ input {
 
 #button-login:hover {
   background-color: #2d5cb9;
+}
+
+.birthdate-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#birthdate {
+  width: 172px;
+}
+
+#label-birthdate {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 600;
 }
