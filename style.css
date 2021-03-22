@@ -165,3 +165,16 @@ input {
   line-height: 18px;
   padding: 0 10px 0 3px;
 }
+
+#facebook-register {
+  font-size: 19px;
+  margin: 30px 0;
+  padding: 7px 20px;
+  text-align: center;
+  background: linear-gradient(#67ae55, #578843);
+  color: #fff;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
