@@ -62,7 +62,7 @@
 #facebook-slogan {
   color: #0e385f;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
@@ -97,16 +97,16 @@
   margin-bottom: 10px;
 }
 
-.initial-registration input:nth-child(1) {
+#firstname {
   margin-right: 8px;
   width: 172px;
 }
 
-.initial-registration input:nth-child(2) {
+#lastname {
   width: 172px;
 }
 
-#phone-email, #password {
+#phone-email , #password {
   margin-bottom: 10px;
   width: 352px;
 }
@@ -114,10 +114,6 @@
 input {
   padding: 8px 10px;
 }
-
-
-
-
 
 .facebook-login {
   display: flex;
