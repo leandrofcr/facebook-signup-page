@@ -60,7 +60,7 @@ header {
 .right-content {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 300px;
 }
 
 .text-right-content {
@@ -157,22 +157,27 @@ header {
   font-weight: 600;
 }
 
-.label-gender {
+.label-gender-content {
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 16px;
   font-weight: 600;
 }
 
-#label-gender-text {
+#label-gender {
   color: #90949c;
   margin-bottom: 5px;
 }
 
 .gender-container label {
   color: #1d2129;
+<<<<<<< HEAD
   font-size: 18px;
   font-weight: 500;
+=======
+  font-size: 12px;
+  font-weight: 400;
+>>>>>>> dc8e1bad1cb51ba16c6f82b9fe170a74663476ce
   line-height: 18px;
   padding: 0 10px 0 3px;
 }
@@ -189,3 +194,11 @@ header {
   cursor: pointer;
   letter-spacing: 1px;
 }
+<<<<<<< HEAD
+=======
+
+.form-registration input {
+  padding: 8px 10px;
+  font-size: 18px;
+}
+>>>>>>> dc8e1bad1cb51ba16c6f82b9fe170a74663476ce
