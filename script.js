@@ -19,4 +19,4 @@ singUpBtn.addEventListener('click', () => {
       break;
     }
   }
-})
+});
