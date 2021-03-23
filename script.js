@@ -6,7 +6,6 @@ buttonLogin.addEventListener('click', () => {
 });
 
 // Verifica se há algum campo não preenchido
-
 const singUpBtn = document.getElementById('facebook-register');
 singUpBtn.addEventListener('click', (event) => {
   const element = event;
@@ -28,7 +27,6 @@ singUpBtn.addEventListener('click', (event) => {
 });
 
 // Adiona um campo de texto se o gênero personalizado for selecionado
-
 const newField = document.createElement('input');
 const genderCustom = document.getElementById('personalizado');
 genderCustom.addEventListener('change', () => {
@@ -48,18 +46,19 @@ genderFemale.addEventListener('click', removeCustomGender);
 
 // Exibe mensagem de validação
 function welcomeMessage() {
+  // const userData ={
+  //   firstName: document.getElementById('firstname').value,
+  //   lastName:document.getElementById('lastname').value,
+  //   emailOrPhone:document.getElementById('phone-email').value,
+  //   birthdate:document.getElementById('birthdate').value,
+  //   gender:document.querySelector('input:checked').value,
+  // };
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
   const login = document.getElementById('phone-email').value;
   const birthdate = document.getElementById('birthdate').value;
-  const genders = document.getElementsByName('gender');
-  let gender = '';
-  for (let index = 0; index < genders.length; index += 1) {
-    if (genders[index].checked) {
-      gender = genders[index].value;
-      break;
-    }
-  }
+  const gender = document.querySelector('input:checked').value;
+
   return `Olá, ${firstName}${lastName}!\n${login}\n${birthdate}\n${gender}.`;
 }
 
@@ -73,9 +72,7 @@ function validationPassed() {
   }
   if (isValid === '') {
     const message = welcomeMessage();
-    const newEl = document.createElement('p');
-    newEl.innerText = message;
-    document.querySelector('.right-content').innerHTML = message;
+    document.querySelector('.right-content').innerText = message;
   }
 }
 
