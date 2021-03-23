@@ -13,10 +13,10 @@ singUpBtn.addEventListener('click', () => {
   for (let index = 0; index < mainFormInput.length; index += 1) {
     if (mainFormInput[index].value === '') {
       const newElement = document.createElement('p');
-      newElement.className = 'error-message'
+      newElement.className = 'error-message';
       newElement.innerHTML = 'Campos inválidos';
       document.querySelector('.form-registration').appendChild(newElement);
       break;
     }
   }
-})
+});

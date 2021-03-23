@@ -13,7 +13,8 @@ header {
   align-items: center;
   padding: 10px;
 }
-.header-content{
+
+.header-content {
   display: flex;
   width: 980px;
   justify-content: space-between;
@@ -171,13 +172,8 @@ header {
 
 .gender-container label {
   color: #1d2129;
-<<<<<<< HEAD
-  font-size: 18px;
-  font-weight: 500;
-=======
   font-size: 12px;
   font-weight: 400;
->>>>>>> dc8e1bad1cb51ba16c6f82b9fe170a74663476ce
   line-height: 18px;
   padding: 0 10px 0 3px;
 }
@@ -194,11 +190,8 @@ header {
   cursor: pointer;
   letter-spacing: 1px;
 }
-<<<<<<< HEAD
-=======
 
 .form-registration input {
   padding: 8px 10px;
   font-size: 18px;
 }
->>>>>>> dc8e1bad1cb51ba16c6f82b9fe170a74663476ce
