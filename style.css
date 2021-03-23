@@ -110,6 +110,7 @@ header {
 .form-control {
   display: flex;
   align-self: flex-end;
+  margin-bottom: 25px;
 }
 
 #reset-account , #reset-account:visited {
@@ -200,7 +201,7 @@ header {
   font-size: 15px;
 }
 
-/* #welcome-message{
+/* #welcome-message {
   color: #0e385f;
   font-size: 20px;
   font-weight: 600;
