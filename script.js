@@ -10,11 +10,11 @@ buttonLogin.addEventListener('click', () => {
 const singUpBtn = document.getElementById('facebook-register');
 singUpBtn.addEventListener('click', (event) => {
   const element = event;
-  const withError = document.getElementById('error-message');
   element.preventDefault();
-  if (withError !== null) {
-    withError.remove();
-  }
+  // const withError = document.getElementById('error-message');
+  // if (withError !== null) {
+  //   withError.remove();
+  // }
   const mainFormInput = document.getElementsByClassName('main-form');
   for (let index = 0; index < mainFormInput.length; index += 1) {
     if (mainFormInput[index].value === '') {
