@@ -20,3 +20,22 @@ singUpBtn.addEventListener('click', () => {
     }
   }
 });
+
+// Adiona um campo de texto se o gênero personalizado for selecionado
+const genderCustom = document.getElementById('personalizado');
+genderCustom.addEventListener('change', () => {
+  const newField = document.createElement('input');
+  newField.setAttribute('name', 'gender-custom');
+  newField.setAttribute('placeholder', 'Gênero (opcional)');
+  newField.setAttribute('id', 'gender-custom');
+  document.querySelector('.gender-container').appendChild(newField);
+});
+
+// Remove o elemento do gênero personalizado caso outro gênero seja selecionado
+function removeCustomGender() {
+  document.getElementById('gender-custom').remove();
+}
+const genderMale = document.getElementById('feminino');
+const genderFemale = document.getElementById('masculino');
+genderMale.addEventListener('click', removeCustomGender);
+genderFemale.addEventListener('click', removeCustomGender);
