@@ -77,41 +77,47 @@ function validationPassed() {
 
 singUpBtn.addEventListener('click', validationPassed);
 
-document.body.onresize = () => {
-  if (window.screen.width <= 500) {
-    if (document.querySelectorAll('.mobile-content').length > 0) {
-      document.querySelector('.mobile-content').remove();
-    }
-    const mobileContent = document.createElement('div');
-    mobileContent.className = 'mobile-content';
-    document.body.appendChild(mobileContent);
+// Cria novos elementos para telas com largura abaixo de 500px.
 
-    const mobileLogin = document.createElement('form');
-    mobileLogin.className = 'mobile-login';
-    mobileContent.appendChild(mobileLogin);
+// FONTE AUXILIAR : https://cursos.alura.com.br/forum/topico-como-executar-uma-funcao-do-javascript-se-a-janela-do-browser-diminuir-de-800px-41605
 
-    const emailOrPhone = document.createElement('input');
-    emailOrPhone.setAttribute('placeholder', 'Número de celular ou email');
-    mobileContent.appendChild(emailOrPhone);
+// ----------------------------- FUNÇÃO COMENTADA TEMPORARIAMENTE
 
-    const password = document.createElement('input');
-    password.setAttribute('placeholder', 'Senha');
-    password.setAttribute('type', 'password');
-    mobileContent.appendChild(password);
+// document.body.onresize = () => {
+//   if (window.screen.width <= 500) {
+//     if (document.querySelectorAll('.mobile-content').length > 0) {
+//       document.querySelector('.mobile-content').remove();
+//     }
+//     const mobileContent = document.createElement('div');
+//     mobileContent.className = 'mobile-content';
+//     document.body.appendChild(mobileContent);
 
-    const submitBtn = document.createElement('button');
-    submitBtn.setAttribute('type', 'submit');
-    submitBtn.innerText = 'Entrar';
-    mobileContent.appendChild(submitBtn);
+//     const mobileLogin = document.createElement('form');
+//     mobileLogin.className = 'mobile-login';
+//     mobileContent.appendChild(mobileLogin);
 
-    const newAccBtn = document.createElement('button');
-    newAccBtn.innerText = 'Criar nova conta';
-    mobileContent.appendChild(newAccBtn);
+//     const emailOrPhone = document.createElement('input');
+//     emailOrPhone.setAttribute('placeholder', 'Número de celular ou email');
+//     mobileContent.appendChild(emailOrPhone);
 
-    const forgot = document.createElement('a');
-    forgot.innerText = 'Esqueceu a senha?';
-    mobileContent.appendChild(forgot);
-  }
-};
+//     const password = document.createElement('input');
+//     password.setAttribute('placeholder', 'Senha');
+//     password.setAttribute('type', 'password');
+//     mobileContent.appendChild(password);
 
-// FONTE : https://cursos.alura.com.br/forum/topico-como-executar-uma-funcao-do-javascript-se-a-janela-do-browser-diminuir-de-800px-41605
+//     const submitBtn = document.createElement('button');
+//     submitBtn.setAttribute('type', 'submit');
+//     submitBtn.id = 'signIn-btn';
+//     submitBtn.innerText = 'Entrar';
+//     mobileContent.appendChild(submitBtn);
+
+//     const newAccBtn = document.createElement('button');
+//     newAccBtn.innerText = 'Criar nova conta';
+//     newAccBtn.id = 'signUp-btn';
+//     mobileContent.appendChild(newAccBtn);
+
+//     const forgot = document.createElement('a');
+//     forgot.innerText = 'Esqueceu a senha?';
+//     mobileContent.appendChild(forgot);
+//   }
+// };
