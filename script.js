@@ -5,16 +5,16 @@ buttonLogin.addEventListener('click', () => {
   alert(userEmail);
 });
 
-// Verifica se há algum campo não pree
+// Verifica se há algum campo não preenchido
 
+const isError = document.getElementById('error-message');
 const singUpBtn = document.getElementById('facebook-register');
 singUpBtn.addEventListener('click', (event) => {
   const element = event;
   element.preventDefault();
-  // const withError = document.getElementById('error-message');
-  // if (withError !== null) {
-  //   withError.remove();
-  // }
+  if (isError !== null) {
+    isError.remove();
+  }
   const mainFormInput = document.getElementsByClassName('main-form');
   for (let index = 0; index < mainFormInput.length; index += 1) {
     if (mainFormInput[index].value === '') {
@@ -28,18 +28,18 @@ singUpBtn.addEventListener('click', (event) => {
 });
 
 // Adiona um campo de texto se o gênero personalizado for selecionado
-// const genderCustom = document.getElementById('personalizado');
-// genderCustom.addEventListener('change', () => {
-//   const newField = document.createElement('input');
-//   newField.setAttribute('name', 'gender-custom');
-//   newField.setAttribute('placeholder', 'Gênero (opcional)');
-//   newField.setAttribute('id', 'gender-custom');
-//   document.querySelector('.gender-container').appendChild(newField);
-// });
+
+const newField = document.createElement('input');
+const genderCustom = document.getElementById('personalizado');
+genderCustom.addEventListener('change', () => {
+  newField.setAttribute('name', 'gender-custom');
+  newField.setAttribute('placeholder', 'Gênero (opcional)');
+  document.querySelector('.gender-container').appendChild(newField);
+});
 
 // Remove o elemento do gênero personalizado caso outro gênero seja selecionado
 function removeCustomGender() {
-  document.getElementById('gender-custom').remove();
+  document.getElementsByName('gender-custom')[0].remove();
 }
 const genderMale = document.getElementById('feminino');
 const genderFemale = document.getElementById('masculino');
@@ -61,19 +61,15 @@ function welcomeMessage() {
       break;
     }
   }
-  return `Olá, ${firstName}${lastName}!${login}${birthdate}${gender}.`;
+  return `Olá, ${firstName}${lastName}!\n${login}\n${birthdate}\n${gender}.`;
 }
 
 function validationPassed() {
-  const mainFormInput = document.getElementsByClassName('main-form');
-  for (let index = 0; index < mainFormInput.length; index += 1) {
-    if (mainFormInput[index].value !== '') {
-      const message = welcomeMessage();
-
-      const newEl = document.createElement('p');
-      newEl.innerText = message;
-      document.querySelector('.right-content').innerHTML = message;
-    }
+  if (isError === null) {
+    const message = welcomeMessage();
+    const newEl = document.createElement('p');
+    newEl.innerText = message;
+    document.querySelector('.right-content').innerHTML = message;
   }
 }
 
