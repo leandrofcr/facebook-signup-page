@@ -195,8 +195,14 @@ header {
   font-size: 18px;
 }
 
-.error-message {
+#error-message {
   color: red;
   font-weight: 700;
   font-size: 15px;
 }
+
+/* #welcome-message{
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+} */
