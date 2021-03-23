@@ -152,12 +152,13 @@ header {
   font-weight: 600;
 }
 
-.label-gender-content {
-  display: flex;
-  margin-bottom: 5px;
+.gender-container {
   margin-top: 10px;
-  font-size: 16px;
-  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.label-gender-content {
+  margin-top: 10px;
 }
 
 #label-gender {

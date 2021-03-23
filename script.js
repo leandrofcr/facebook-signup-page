@@ -8,15 +8,16 @@ buttonLogin.addEventListener('click', () => {
 // Verifica se há algum campo não pree
 
 const singUpBtn = document.getElementById('facebook-register');
-singUpBtn.addEventListener('click', () => {
-  let withError = document.getElementById('error-message');
+singUpBtn.addEventListener('click', (event) => {
+  const element = event;
+  const withError = document.getElementById('error-message');
+  element.preventDefault();
   if (withError !== null) {
     withError.remove();
   }
   const mainFormInput = document.getElementsByClassName('main-form');
   for (let index = 0; index < mainFormInput.length; index += 1) {
     if (mainFormInput[index].value === '') {
-      console.log('teste')
       const newElement = document.createElement('p');
       newElement.id = 'error-message';
       newElement.innerHTML = 'Campos inválidos';
