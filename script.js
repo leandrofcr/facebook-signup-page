@@ -59,7 +59,7 @@ function welcomeMessage() {
   const birthdate = document.getElementById('birthdate').value;
   const gender = document.querySelector('input:checked').value;
 
-  return `Olá, ${firstName}${lastName}!\n${login}\n${birthdate}\n${gender}.`;
+  return `Olá, ${firstName}${lastName}\n${login}\n${birthdate}\n${gender}.`;
 }
 
 function validationPassed() {
