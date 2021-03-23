@@ -29,37 +29,37 @@ singUpBtn.addEventListener('click', (event) => {
 // Adiona um campo de texto se o gênero personalizado for selecionado
 const newField = document.createElement('input');
 const genderCustom = document.getElementById('personalizado');
-genderCustom.addEventListener('change', () => {
-  newField.setAttribute('name', 'gender-custom');
+const nameNewField = 'gender-custom';
+genderCustom.addEventListener('click', () => {
+  newField.setAttribute('name', nameNewField);
   newField.setAttribute('placeholder', 'Gênero (opcional)');
   document.querySelector('.gender-container').appendChild(newField);
 });
 
 // Remove o elemento do gênero personalizado caso outro gênero seja selecionado
 function removeCustomGender() {
-  document.getElementsByName('gender-custom')[0].remove();
+  if (document.getElementsByName(nameNewField)[0]) {
+    document.getElementsByName(nameNewField)[0].remove();
+  }
 }
-const genderMale = document.getElementById('feminino');
-const genderFemale = document.getElementById('masculino');
+const genderMale = document.getElementById('masculino');
+const genderFemale = document.getElementById('feminino');
 genderMale.addEventListener('click', removeCustomGender);
 genderFemale.addEventListener('click', removeCustomGender);
 
 // Exibe mensagem de validação
+
 function welcomeMessage() {
-  // const userData ={
-  //   firstName: document.getElementById('firstname').value,
-  //   lastName:document.getElementById('lastname').value,
-  //   emailOrPhone:document.getElementById('phone-email').value,
-  //   birthdate:document.getElementById('birthdate').value,
-  //   gender:document.querySelector('input:checked').value,
-  // };
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
   const login = document.getElementById('phone-email').value;
   const birthdate = document.getElementById('birthdate').value;
   const gender = document.querySelector('input:checked').value;
 
-  return `Olá, ${firstName}${lastName}!\n${login}\n${birthdate}\n${gender}.`;
+  return `Olá, ${firstName} ${lastName}!\n
+  ${login}\n
+  ${birthdate}\n
+  ${gender}`;
 }
 
 function validationPassed() {
