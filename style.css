@@ -110,6 +110,7 @@ header {
 .form-control {
   display: flex;
   align-self: flex-end;
+  /* margin-bottom: 25px; */
 }
 
 #reset-account , #reset-account:visited {
