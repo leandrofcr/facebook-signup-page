@@ -7,11 +7,11 @@ buttonLogin.addEventListener('click', () => {
 
 // Verifica se há algum campo não preenchido
 
-const isError = document.getElementById('error-message');
 const singUpBtn = document.getElementById('facebook-register');
 singUpBtn.addEventListener('click', (event) => {
   const element = event;
   element.preventDefault();
+  const isError = document.getElementById('error-message');
   if (isError !== null) {
     isError.remove();
   }
@@ -47,7 +47,6 @@ genderMale.addEventListener('click', removeCustomGender);
 genderFemale.addEventListener('click', removeCustomGender);
 
 // Exibe mensagem de validação
-
 function welcomeMessage() {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
@@ -65,7 +64,14 @@ function welcomeMessage() {
 }
 
 function validationPassed() {
-  if (isError === null) {
+  let isValid = '';
+  const mainFormInput = document.getElementsByClassName('main-form');
+  for (let index = 0; index < mainFormInput.length; index += 1) {
+    if (mainFormInput[index].value === '') {
+      isValid = false;
+    }
+  }
+  if (isValid === '') {
     const message = welcomeMessage();
     const newEl = document.createElement('p');
     newEl.innerText = message;
