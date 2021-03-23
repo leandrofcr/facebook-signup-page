@@ -8,7 +8,9 @@ buttonLogin.addEventListener('click', () => {
 // Verifica se há algum campo não pree
 
 const singUpBtn = document.getElementById('facebook-register');
-singUpBtn.addEventListener('click', () => {
+singUpBtn.addEventListener('click', (event) => {
+  const element = event;
+  element.preventDefault();
   const mainFormInput = document.getElementsByClassName('main-form');
   for (let index = 0; index < mainFormInput.length; index += 1) {
     if (mainFormInput[index].value === '') {
