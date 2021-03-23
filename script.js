@@ -76,3 +76,42 @@ function validationPassed() {
 }
 
 singUpBtn.addEventListener('click', validationPassed);
+
+document.body.onresize = () => {
+  if (window.screen.width <= 500) {
+    if (document.querySelectorAll('.mobile-content').length > 0) {
+      document.querySelector('.mobile-content').remove();
+    }
+    const mobileContent = document.createElement('div');
+    mobileContent.className = 'mobile-content';
+    document.body.appendChild(mobileContent);
+
+    const mobileLogin = document.createElement('form');
+    mobileLogin.className = 'mobile-login';
+    mobileContent.appendChild(mobileLogin);
+
+    const emailOrPhone = document.createElement('input');
+    emailOrPhone.setAttribute('placeholder', 'Número de celular ou email');
+    mobileContent.appendChild(emailOrPhone);
+
+    const password = document.createElement('input');
+    password.setAttribute('placeholder', 'Senha');
+    password.setAttribute('type', 'password');
+    mobileContent.appendChild(password);
+
+    const submitBtn = document.createElement('button');
+    submitBtn.setAttribute('type', 'submit');
+    submitBtn.innerText = 'Entrar';
+    mobileContent.appendChild(submitBtn);
+
+    const newAccBtn = document.createElement('button');
+    newAccBtn.innerText = 'Criar nova conta';
+    mobileContent.appendChild(newAccBtn);
+
+    const forgot = document.createElement('a');
+    forgot.innerText = 'Esqueceu a senha?';
+    mobileContent.appendChild(forgot);
+  }
+};
+
+// FONTE : https://cursos.alura.com.br/forum/topico-como-executar-uma-funcao-do-javascript-se-a-janela-do-browser-diminuir-de-800px-41605

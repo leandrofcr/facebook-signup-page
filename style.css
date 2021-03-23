@@ -24,6 +24,7 @@ header {
 
 .top-bar {
   display: flex;
+  flex-wrap: wrap;
   width: 980px;
   justify-content: space-between;
   background-color: #4267b2;
@@ -35,6 +36,7 @@ header {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
 }
@@ -90,7 +92,8 @@ header {
   width: 172px;
 }
 
-#phone-email , #password {
+#phone-email,
+#password {
   margin-bottom: 10px;
   width: 352px;
 }
@@ -113,7 +116,8 @@ header {
   margin-bottom: 25px;
 }
 
-#reset-account , #reset-account:visited {
+#reset-account,
+#reset-account:visited {
   text-decoration: none;
   color: #9cb4d8;
 }
@@ -145,7 +149,8 @@ header {
   width: 172px;
 }
 
-#label-birthdate , #label-gender {
+#label-birthdate,
+#label-gender {
   margin-bottom: 5px;
   margin-top: 10px;
   color: #90949c;
@@ -201,8 +206,29 @@ header {
   font-size: 15px;
 }
 
-/* #welcome-message {
-  color: #0e385f;
-  font-size: 20px;
-  font-weight: 600;
-} */
+@media screen and (max-width: 500px) {
+  .facebook-login {
+    display: none;
+  }
+
+  .top-bar {
+    justify-content: center;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .facebook-logo {
+    width: 120px;
+  }
+
+  .main-content{
+    display: none;
+  }
+
+
+
+
+
+}
