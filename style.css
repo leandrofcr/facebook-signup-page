@@ -24,8 +24,8 @@ header {
 
 .top-bar {
   display: flex;
-  width: 980;
-  align-self: flex-start;
+  width: 980px;
+  justify-content: space-between;
   background-color: #4267b2;
 }
 
@@ -144,7 +144,7 @@ header {
   width: 172px;
 }
 
-#label-birthdate {
+#label-birthdate , #label-gender {
   margin-bottom: 5px;
   margin-top: 10px;
   color: #90949c;
@@ -192,4 +192,10 @@ header {
 .form-registration input {
   padding: 8px 10px;
   font-size: 18px;
+}
+
+.error-message {
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
 }
