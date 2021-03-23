@@ -144,7 +144,7 @@ header {
   width: 172px;
 }
 
-#label-birthdate {
+#label-birthdate , #label-gender {
   margin-bottom: 5px;
   margin-top: 10px;
   color: #90949c;
@@ -153,6 +153,7 @@ header {
 }
 
 .label-gender-content {
+  display: flex;
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 16px;
@@ -162,6 +163,8 @@ header {
 #label-gender {
   color: #90949c;
   margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .gender-container label {
@@ -188,4 +191,10 @@ header {
 .form-registration input {
   padding: 8px 10px;
   font-size: 18px;
+}
+
+.error-message{
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
 }
