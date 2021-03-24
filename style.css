@@ -232,6 +232,10 @@ header {
   font-size: 15px;
 }
 
+.mobile-content {
+  display: none;
+}
+
 @media screen and ( max-width : 500px ) {
 
   .facebook-login {
@@ -301,4 +305,12 @@ header {
     color: #2959bb;
     font-size: 12px;
   }
+
+  hr {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 10px 0;
+  }
+
 }
